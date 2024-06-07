@@ -1,0 +1,78 @@
+.services{
+    padding: 5rem 2rem;
+    border-bottom: 1px solid gainsboro;
+}
+
+.services__container {
+    width: 1100px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services__header {
+    text-align: center;
+}
+
+.services__title{
+    font-weight: var(--section-title-weight);
+}
+
+.services__sub-title {
+    color: var(--section-subtitle-color);
+}
+
+.services__body {
+    margin-top: var(--section-body-margin);
+    display: grid;
+    grid-template-columns: repeat(3,minmax(200px, 1fr)); /* Adjust the min and max values as needed */
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.services__card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.services__card:hover {
+    transform: scale(1.02);
+} 
+
+.services__card:hover .services__card-header {
+    background: var(--red-color);
+}
+
+.services__card:hover .services__card-icon {
+    color: white;
+}
+
+.services__card-header {
+    padding: 1.3rem 1.3rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.services__card-icon {
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+.services__card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.services__card-title {
+    font-size: 1.3rem;
+}

@@ -1,0 +1,78 @@
+.teams{
+    padding: 5rem 2rem;
+    border-bottom: 1px solid gainsboro;
+}
+
+.teams__container {
+    width: 1100px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.teams__header {
+    text-align: center;
+}
+
+.teams__title{
+    font-weight: var(--section-title-weight);
+}
+
+.teams__sub-title {
+    color: var(--section-subtitle-color);
+}
+
+.teams__body {
+    margin-top: var(--section-body-margin);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.teams__card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.teams__card:hover 
+.teams__card-socials  {
+   translate: 0 0;
+}
+
+
+.teams__card-header {
+    position: relative;
+    overflow: hidden;
+}
+
+.teams__card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.teams__card-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: var(--red-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    translate: 0 300px;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.teams__social-icon {
+    font-size: 2rem;
+    color: white;
+}

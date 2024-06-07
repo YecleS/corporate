@@ -1,0 +1,10 @@
+.about{
+    padding: 5rem 2rem;
+    border-bottom: 1px solid gainsboro;
+}
+
+.about__container {
+    width: 1100px;
+    margin-inline: auto;
+}
+

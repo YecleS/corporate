@@ -1,0 +1,32 @@
+.contact-icons {
+    padding: 5rem 2rem;
+    border-bottom: 1px solid gainsboro;
+}
+
+.contact-icons__container {
+    width: 1100px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-icons__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact-icons__icon {
+    font-size: 2.5rem;
+    color: red;
+}
+
+.contact-icons__icon-description {
+    font-size: 1.1rem;
+    
+}
+
